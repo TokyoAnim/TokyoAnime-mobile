@@ -280,7 +280,10 @@ body {
     margin: 0;
 }
 /* Définition d'un container pour gérer l'affichage */
-
+.container {
+    overflow: hidden;
+    /* Cache les éléments qui dépassent du container */
+}
 /* Définition du carousel */
 .carousel {
     position: relative;
@@ -292,8 +295,7 @@ body {
     /* Affiche les éléments en ligne */
     overflow: hidden;
     /* Cache les éléments qui dépassent */
-    height: 100vh;
-    /* Hauteur égale à 100% de la hauteur de la vue */
+   
     flex-wrap: nowrap;
     /* Empêche les éléments de se placer sur plusieurs lignes */
 }
@@ -349,7 +351,7 @@ body {
     /* La distance à gauche est de 50% */
     right: 50%;
     /* La distance à droite est de 50% */
-    bottom: 50%;
+    bottom: 65%;
     /*La distance du bas est de 10% */
     display: flex;
     /* Affiche les points en ligne */
